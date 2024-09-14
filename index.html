@@ -1,19 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusLands Musseum of Art</title>
+    <title>CampusLands Museum of Art</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#welcome">Exhibitions</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#footer">Events</a></li>
+            <li><a href="#footer">Visit</a></li>
+        </ul>
+        <ul>
+            <li><a href="#welcome"><strong>CampusLands Museum of Art</strong></a></li>
+            <li class="hideOnMobile"><a href="#welcome">Exhibitions</a></li>
+            <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#footer">Events</a></li>
+            <li class="hideOnMobile"><a href="#footer">Visit</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
 
-    </div>
+    <section class="welcome" id="welcome">
+        <div class="container-welcome">
+            <div class="slide">
+                <ul>
+                    <li>
+                        <div class="slide-content">
+                            <img src="img/art-1.jpg" alt="img1">
+                            <div class="text-overlay">Text for Image 1</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-content">
+                            <img src="img/art-2.jpg" alt="img2">
+                            <div class="text-overlay">Text for Image 2</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-content">
+                            <img src="img/art-3.jpg" alt="img3">
+                            <div class="text-overlay">Text for Image 3</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-content">
+                            <img src="img/art-4.jpg" alt="img4">
+                            <div class="text-overlay">Text for Image 4</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+
+    <section class="art-gallery" id="gallery">
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-1.jpg" alt="Image 1">
+            </div>
+            <div class="theback">
+                <p>Information about Image 1</p>
+            </div>
+        </div>
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-2.jpg" alt="Image 2">
+            </div>
+            <div class="theback">
+                <p>Information about Image 2</p>
+            </div>
+        </div>
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-3.jpg" alt="Image 3">
+            </div>
+            <div class="theback">
+                <p>Information about Image 3</p>
+            </div>
+        </div>
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-4.jpg" alt="Image 4">
+            </div>
+            <div class="theback">
+                <p>Information about Image 4</p>
+            </div>
+        </div>
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-5.jpg" alt="Image 5">
+            </div>
+            <div class="theback">
+                <p>Information about Image 5</p>
+            </div>
+        </div>
+
+        <div class="thecard">
+            <div class="thefront">
+                <img src="img/gallery-6.jpg" alt="Image 6">
+            </div>
+            <div class="theback">
+                <p>Information about Image 6</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <h2>Plan Your Visit</h2>
+        <div class="container-footer">
+            <div class="footer-content">
+                <i class="fa-regular fa-clock"></i>
+                <h3>Opening Hours</h3>
+                <p>Tuesday - Sunday: 10am - 5pm</p>
+                <p>Closed on Mondays</p>
+            </div>
+            <div class="footer-content">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>123 Art Street</p>
+                <p>Cityville, State 12345</p>
+            </div>
+            <div class="footer-content">
+                <i class="fa-regular fa-image"></i>
+                <h3>Current Exhibition</h3>
+                <p>"Modern Masters"</p>
+                <p>Until September 30, 2023</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Campuslands. All rights reserved.</p>
+            <p>Terms of Service Privacy</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
